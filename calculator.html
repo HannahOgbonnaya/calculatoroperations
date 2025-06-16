@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+
+
+
+
+    <input id="ip1" type="text">
+    operation
+    <input id="ip2" type="text">
+    =
+    <input id="output" type="text">
+    <br><br>
+    <button onclick="addF()">+</button>
+    <button onclick="subF()">-</button>
+    <button onclick="multiplyF()">*</button>
+    <button onclick="divideF()">/</button>
+
+
+
+
+
+
+    <script>
+        let ip1E = document.getElementById("ip1")
+        let ip2E = document.getElementById("ip2")
+
+
+        function addF(){
+            // let ip1En = Number(ip1E.value)
+            // let ip2En = Number(ip2E.value)
+            let ip1E = Number(document.getElementById("ip1").value)
+            let ip2E = Number(document.getElementById("ip2").value)
+            let sum = ip1E + ip2E
+            // let sum = ip1En + ip2En
+            document.getElementById("output").value = sum
+
+        }
+
+        
+        function subF(){
+            let ip1En = Number(ip1E.value)
+            let ip2En = Number(ip2E.value)
+            let subtract = ip1En - ip2En
+            document.getElementById("output").value = subtract   
+        }
+
+        function multiplyF(){
+            let ip1En = Number(ip1E.value)
+            let ip2En = Number(ip2E.value)
+            let multiply = ip1En * ip2En
+            document.getElementById("output").value = multiply
+
+        }
+
+        function divideF(){
+            let ip1En = Number(ip1E.value)
+            let ip2En = Number(ip2E.value)
+            let divide = ip1En / ip2En
+            document.getElementById("output").value = divide
+
+        }
+
+
+    </script>
+   
+    
+
+
+
+
+
+</body>
+</html>
